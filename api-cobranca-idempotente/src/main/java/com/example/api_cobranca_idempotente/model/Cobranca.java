@@ -32,11 +32,11 @@ public class Cobranca {
 
     protected Cobranca() {}
 
-    public Cobranca(String idempotencyKey, String clienteId, BigDecimal valor, Status status) {
+    public Cobranca(String idempotencyKey, String clienteId, BigDecimal valor) {
         this.idempotencyKey = idempotencyKey;
         this.clienteId = clienteId;
         this.valor = valor;
-        this.status = status;
+        this.status = Status.PROCESSANDO;
     }
 
     @PrePersist

@@ -40,6 +40,6 @@ public class CobrancaService {
     }
 
     private Cobranca toEntity(CobrancaRequestDTO r) {
-        return new Cobranca(r.idempotencyKey(), r.clienteId(), r.valor(), Status.APROVADA);
+        return new Cobranca(r.idempotencyKey(), r.clienteId(), r.valor());
     }
 }
